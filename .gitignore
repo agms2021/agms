@@ -1,0 +1,41 @@
+# AGMS Enterprise — Git Ignore
+
+# Sensitive data (NEVER commit these)
+data/
+config/api_keys.json
+config/gdrive_credentials.json
+config/gdrive_token.json
+config/firebase_service_account.json
+*.keystore
+*.db
+*.db-shm
+*.db-wal
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Logs
+logs/
+*.log
+
+# Backups
+backups/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Build
+dist/
+build/
+*.spec

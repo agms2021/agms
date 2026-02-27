@@ -1,0 +1,60 @@
+# AGMS Enterprise v3.0 — Complete Requirements
+# Install: pip install -r requirements.txt
+
+# ── Core UI ────────────────────────────────────────────────────
+PySide6>=6.6.0
+
+# ── Database ───────────────────────────────────────────────────
+# SQLite3 is built into Python (no install needed)
+
+# ── Security ───────────────────────────────────────────────────
+cryptography>=41.0.0
+bcrypt>=4.0.0
+PyJWT>=2.8.0
+
+# ── HTTP / API ─────────────────────────────────────────────────
+requests>=2.31.0
+
+# ── Document Generation ────────────────────────────────────────
+reportlab>=4.0.0
+Pillow>=10.0.0
+qrcode[pil]>=7.4.0
+openpyxl>=3.1.0
+
+# ── AI / NLP ───────────────────────────────────────────────────
+# google-generativeai     # Gemini AI (optional)
+# ollama                  # Local AI (optional)
+
+# ── OCR / Screen Capture ───────────────────────────────────────
+# easyocr                 # pip install easyocr (large download)
+# pytesseract             # pip install pytesseract (needs Tesseract)
+# mss                     # pip install mss (screen capture)
+
+# ── WhatsApp ───────────────────────────────────────────────────
+# selenium                # Free QR mode
+# webdriver-manager       # Auto ChromeDriver
+
+# ── Web Dashboard ──────────────────────────────────────────────
+# fastapi                 # pip install fastapi
+# uvicorn                 # pip install uvicorn
+
+# ── Cloud / Backup ─────────────────────────────────────────────
+# google-auth             # GDrive backup
+# google-auth-oauthlib    # OAuth for GDrive
+# google-api-python-client # GDrive API
+
+# ── Health Monitor ─────────────────────────────────────────────
+psutil>=5.9.0
+
+# ── Stable Diffusion (Optional) ────────────────────────────────
+# Install AUTOMATIC1111 or ComfyUI separately
+# Pillow handles fallback poster generation
+
+# ── Scheduling ─────────────────────────────────────────────────
+schedule>=1.2.0
+
+# MINIMAL INSTALL (for basic operation):
+# pip install PySide6 cryptography bcrypt requests reportlab Pillow openpyxl psutil schedule
+
+# ── Development / Testing ───────────────────────────────────────────────────
+# pytest>=7.4.0          # Run: pip install pytest
